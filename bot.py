@@ -38,12 +38,12 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, Config.PORT).start()
-        logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
+        logging.info(f"{me.first_name} ✅✅ Ryōiki Tenkai: Akuryō no Shinden ✅✅")
 
         for id in Config.ADMIN:
             try:
                 await self.send_message(
-                    id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**"
+                    id, f"**__{me.first_name}  Domaine Expension.....✨️__**"
                 )
             except:
                 pass
