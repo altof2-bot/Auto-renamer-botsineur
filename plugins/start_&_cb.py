@@ -20,16 +20,16 @@ async def start(client, message):
     button = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📢 Updates", url="https://t.me/AshutoshGoswami24"),
-                InlineKeyboardButton("💬 Support", url="https://t.me/AshuSupport"),
+                InlineKeyboardButton("📢 Mises à jour", url="https://t.me/BotZFlix"),
+                InlineKeyboardButton("💬 Support", url="https://t.me/BotZFlixSupport"),
             ],
             [
-                InlineKeyboardButton("⚙️ Help", callback_data="help"),
-                InlineKeyboardButton("💙 About", callback_data="about"),
+                InlineKeyboardButton("⚙️ Aide", callback_data="help"),
+                InlineKeyboardButton("💙 À propos", callback_data="about"),
             ],
             [
                 InlineKeyboardButton(
-                    "🧑‍💻 Developer 🧑‍💻", url="https://t.me/AshutoshGoswami24"
+                    "🧑‍💻 Développeur 🧑‍💻", url="https://t.me/Kingcey"
                 )
             ],
         ]
@@ -60,18 +60,16 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Updates", url="https://t.me/AshutoshGoswami24"),
-                        InlineKeyboardButton(
-                            "💬 Support", url="https://t.me/AshuSupport"
-                        ),
+                        InlineKeyboardButton("📢 Mises à jour", url="https://t.me/BotZFlix"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/BotZFlixSupport"),
                     ],
                     [
-                        InlineKeyboardButton("⚙️ Help", callback_data="help"),
-                        InlineKeyboardButton("💙 About", callback_data="about"),
+                        InlineKeyboardButton("⚙️ Aide", callback_data="help"),
+                        InlineKeyboardButton("💙 À propos", callback_data="about"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "🧑‍💻 Developer 🧑‍💻", url="https://t.me/AshutoshGoswami24"
+                            "🧑‍💻 Développeur 🧑‍💻", url="https://t.me/Kingcey"
                         )
                     ],
                 ]
@@ -84,8 +82,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("✖️ Close", callback_data="close"),
-                        InlineKeyboardButton("🔙 Back", callback_data="help"),
+                        InlineKeyboardButton("✖️ Fermer", callback_data="close"),
+                        InlineKeyboardButton("🔙 Retour", callback_data="help"),
                     ]
                 ]
             ),
@@ -98,16 +96,16 @@ async def cb_handler(client, query: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton(
-                            "⚙️ Setup AutoRename Format ⚙️", callback_data="file_names"
+                            "⚙️ Configurer le format AutoRename ⚙️", callback_data="file_names"
                         )
                     ],
                     [
-                        InlineKeyboardButton("🖼️ Thumbnail", callback_data="thumbnail"),
-                        InlineKeyboardButton("✏️ Caption", callback_data="caption"),
+                        InlineKeyboardButton("🖼️ Miniature", callback_data="thumbnail"),
+                        InlineKeyboardButton("✏️ Légende", callback_data="caption"),
                     ],
                     [
-                        InlineKeyboardButton("🏠 Home", callback_data="home"),
-                        InlineKeyboardButton("💰 Donate", callback_data="donate"),
+                        InlineKeyboardButton("🏠 Accueil", callback_data="home"),
+                        InlineKeyboardButton("💰 Faire un don", callback_data="donate"),
                     ],
                 ]
             ),
@@ -119,8 +117,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("✖️ Close", callback_data="close"),
-                        InlineKeyboardButton("🔙 Back", callback_data="help"),
+                        InlineKeyboardButton("✖️ Fermer", callback_data="close"),
+                        InlineKeyboardButton("🔙 Retour", callback_data="help"),
                     ]
                 ]
             ),
@@ -134,8 +132,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("✖️ Close", callback_data="close"),
-                        InlineKeyboardButton("🔙 Back", callback_data="help"),
+                        InlineKeyboardButton("✖️ Fermer", callback_data="close"),
+                        InlineKeyboardButton("🔙 Retour", callback_data="help"),
                     ]
                 ]
             ),
@@ -147,8 +145,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("✖️ Close", callback_data="close"),
-                        InlineKeyboardButton("🔙 Back", callback_data="help"),
+                        InlineKeyboardButton("✖️ Fermer", callback_data="close"),
+                        InlineKeyboardButton("🔙 Retour", callback_data="help"),
                     ]
                 ]
             ),
@@ -161,8 +159,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("✖️ Close", callback_data="close"),
-                        InlineKeyboardButton("🔙 Back", callback_data="home"),
+                        InlineKeyboardButton("✖️ Fermer", callback_data="close"),
+                        InlineKeyboardButton("🔙 Retour", callback_data="home"),
                     ]
                 ]
             ),
