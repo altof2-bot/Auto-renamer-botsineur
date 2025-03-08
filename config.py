@@ -37,7 +37,7 @@ Envoyer moi votre Fichier et j'utiliserai l'extension du territoire ||Temple des
 
 Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
 
- `[episode]` :- Pour remplacer le numéro d'épisode.
+ `[episode]` :- Pour remplacer le numéro épisode.
  `[quality]` :- Pour remplacé la résolution de la qualité
 
 <b>➻ Exemple :</b> <code> /sukuna Naruto Shippuden S01[episode] [quality][Dual Audio] @BotZFlix</code>
