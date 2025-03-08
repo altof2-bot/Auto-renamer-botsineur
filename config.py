@@ -3,22 +3,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "24817837")
+    API_HASH  = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7963364338:AAHF93s-DU2ELTYtfduusIyFZMm7K9gGGfM") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","BotZFlix")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://tgbot:4KzEdxEl4YldwwFR@tg.vr8ef.mongodb.net/?retryWrites=true&w=majority&appName=Tg")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7428552084').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    PORT = int(os.environ.get("PORT", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'BotZFlix,Aniflix_official').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002376378205"))
+    PORT = int(os.environ.get("PORT", "8080"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
@@ -27,73 +27,70 @@ class Config(object):
 class Txt(object):
     # part of text configuration
         
-    START_TXT = """Hello {} 
+    START_TXT = """Salut {} 
     
-➻ This Is An Advanced And Yet Powerful Rename Bot.
+Je suis SUKUNA maître des fléaux et ||Elèves Du grand maître KINGCEY.|| Je suis un bot de renommage de fichiers qui fait partie des plus puissant
+
+Envoyer moi votre Fichier et j'utiliserai l'extension du territoire ||Temple des fichiers|| pour la renommer à la perfection.
     
-➻ Using This Bot You Can Auto Rename Of Your Files.
+    FILE_NAME_TXT = """<b><u>VOICI LE MENU AUTO-RENOMAGE</u></b>
+
+Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
+
+✓ `[episode]` :- Pour remplacer le numéro d'épisode.
+✓ `[quality]` :- Pour remplacé la résolution de la qualité
+
+<b>➻ Exemple :</b> <code> /sukuna Naruto Shippuden S01[episode] [quality][Dual Audio] @BotZFlix</code>
+
+<b>➻ Votre format autorename actuel :</b> <code>{format_template}</code> """
     
-➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
-    
-➻ Use /tutorial Command To Know How To Use Me.
-
-<b>Bot Is Made By @AshutoshGoswami24</b>
-
-<b><a href='https://github.com/AshutoshGoswami24/Auto-Rename-Bot'>AshutoshGoswami24/Auto-Rename-Bot.git</a></b>
-"""
-    
-    FILE_NAME_TXT = """<b><u>SETUP AUTO RENAME FORMAT</u></b>
-
-Use These Keywords To Setup Custom File Name
-
-✓ `[episode]` :- To Replace Episode Number
-✓ `[quality]` :- To Replace Video Resolution
-
-<b>➻ Example :</b> <code> /autorename Naruto Shippuden S01[episode] [quality][Dual Audio] @AshutoshGoswami24</code>
-
-<b>➻ Your Current Auto Rename Format :</b> <code>{format_template}</code> """
-    
-    ABOUT_TXT = f"""<b>🤖 My Name :</b>
+    ABOUT_TXT = f"""<b>🤖 Mon Nom :</b>
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
-<b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
-<b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/AshutoshGoswami24'>PandaWep</a>
+<b>📚 Librarie :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
+<b>🚀 Serveur :</b> <a href='https://heroku.com'>Heroku</a>
+<b>🧑‍💻 Developeur :</b> <a href='https://t.me/Kingcey'>ZFlixTeam</a>
     
-<b>♻️ Bot Made By :</b> @AshutoshGoswami24"""
+<b>♻️ Ryōiki Tenkai: Akuryō no Shinden :</b>"""
 
     
-    THUMBNAIL_TXT = """<b><u>🖼️  HOW TO SET THUMBNAIL</u></b>
+    THUMBNAIL_TXT = """<b><u>🖼️  COMMENT AJOUTER UNE VIGNETTE</u></b>
     
-⦿ You Can Add Custom Thumbnail Simply By Sending A Photo To Me....
+⦿Vous pouvez ajouter une miniature personnalisée simplement en envoyant une photo.....
     
-⦿ /viewthumb - Use This Command To See Your Thumbnail
-⦿ /delthumb - Use This Command To Delete Your Thumbnail"""
+⦿ /viewthumb - Utilise cette commande pour voir ta vignette
+⦿ /delthumb - Utilise cette commande pour supprimé ta vignette"""
 
-    CAPTION_TXT = """<b><u>📝  HOW TO SET CAPTION</u></b>
+    CAPTION_TXT = """<b><u>📝  COMMENT DEFINIR UNE LEGENDE ?</u></b>
     
-⦿ /set_caption - Use This Command To Set Your Caption
-⦿ /see_caption - Use This Command To See Your Caption
-⦿ /del_caption - Use This Command To Delete Your Caption"""
+⦿ /set_caption - Utilise cette commande pour définir une légende
+⦿ /see_caption - Utilise cette commande pour voir ta légende
+⦿ /del_caption - Utilise cette commande pour supprimé ta légende"""
 
     PROGRESS_BAR = """<b>\n
-╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
-┣⪼ 🗃️ Sɪᴢᴇ: {1} | {2}
-┣⪼ ⏳️ Dᴏɴᴇ : {0}%
-┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s
-┣⪼ ⏰️ Eᴛᴀ: {4}
-┣⪼ 🥺 joine Plz: @AshutoshGoswami24
+╭━━━━❰SUKUNA BOT❱━➣
+┣⪼ 🗃️ Poids: {1} | {2}
+┣⪼ ⏳️ FAIT : {0}%
+┣⪼ 🚀 VITESSE: {3}/s
+┣⪼ ⏰️ ETA: {4}
+┣⪼ 🥺 Rejoins ici : @ZFlixTeam
 ╰━━━━━━━━━━━━━━━➣ </b>"""
     
     
-    DONATE_TXT = """<b>🥲 Thanks For Showing Interest In Donation! ❤️</b>
-    
-If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
-    
-<b>My UPI - PandaWep@ybl</b> """
+    DONATE_TXT = """<b>❤️‍🩹 Dσɳɑtiσɳ 💝
+
+🎗Nous ɑvons besoin de votre ɑide ɑujourd’hui pour continuer ɑ̀ vous fournir des contenus de quɑlités ɑ̀ trɑvers nos plɑteformes et bots.🎗
+
+« Seriez-vous prêt ɑ̀ ɑider en fɑisɑnt un don 💝 ? Chɑque centime ɑiderɑ. »
+
+« Fɑire un don ❤️‍🩹 est une fɑçon de tendre une mɑin secourɑble. 
+
+En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort visɑnt ɑ̀  mɑintenir les bots ZFlix et ce bot en vie.
+
+🤲 Merci de Contribuer ɑ̀ l'hébergement et ɑux frɑis d'ɑbonnement indispensɑbles pour lɑ survie de notre communɑuté🥹. » """
     
     HELP_TXT = """<b>Hey</b> {}
     
-Joine @AshutoshGoswami24 To Help """
+écrit nous sur @BotZFlixSupport pour tout aide 24/24 """
 
 
 
