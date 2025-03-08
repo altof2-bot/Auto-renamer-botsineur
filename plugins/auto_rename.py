@@ -2,30 +2,24 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from helper.database import AshutoshGoswami24
 
-@Client.on_message(filters.private & filters.command("autorename"))
+@Client.on_message(filters.private & filters.command("sukuna"))
 async def auto_rename_command(client, message):
     user_id = message.from_user.id
 
-    # Extract the format from the command
-    format_template = message.text.split("/autorename", 1)[1].strip()
+    # Extraire le format de la commande
+    format_template = message.text.split("/sukuna", 1)[1].strip()
 
-    # Save the format template to the database
+    # Enregistrer le format dans la base de données
     await AshutoshGoswami24.set_format_template(user_id, format_template)
 
-    await message.reply_text("**Auto Rename Format Updated Successfully! ✅**")
+    await message.reply_text("**Format de renommage automatique mis à jour avec succès ! ✅**")
 
 @Client.on_message(filters.private & filters.command("setmedia"))
 async def set_media_command(client, message):
     user_id = message.from_user.id    
     media_type = message.text.split("/setmedia", 1)[1].strip().lower()
 
-    # Save the preferred media type to the database
+    # Enregistrer le type de média préféré dans la base de données
     await AshutoshGoswami24.set_media_preference(user_id, media_type)
 
-    await message.reply_text(f"**Media Preference Set To :** {media_type} ✅")
-
-
-
-
-
-
+    await message.reply_text(f"**Préférence de média définie sur :** {media_type} ✅")
