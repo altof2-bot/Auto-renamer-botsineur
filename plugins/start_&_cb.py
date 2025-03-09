@@ -20,8 +20,8 @@ async def start(client, message):
     button = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📢 Mises à jour", url="https://t.me/BotZFlix"),
-                InlineKeyboardButton("💬 Support", url="https://t.me/BotZFlixSupport"),
+                InlineKeyboardButton("📢 Mises à jour", url="https://t.me/sineur_x_bot"),
+                InlineKeyboardButton("💬 Support", url="https://t.me/REQUETE_ANIME_30sbot"),
             ],
             [
                 InlineKeyboardButton("⚙️ Aide", callback_data="help"),
@@ -29,7 +29,7 @@ async def start(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    "🧑‍💻 Développeur 🧑‍💻", url="https://t.me/Kingcey"
+                    "🧑‍💻 Développeur 🧑‍💻", url="https://t.me/altof2"
                 )
             ],
         ]
@@ -60,8 +60,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Mises à jour", url="https://t.me/BotZFlix"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/BotZFlixSupport"),
+                        InlineKeyboardButton("📢 Mises à jour", url="https://t.me/sineur_x_bot"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/REQUETE_ANIME_30sbot"),
                     ],
                     [
                         InlineKeyboardButton("⚙️ Aide", callback_data="help"),
@@ -69,7 +69,7 @@ async def cb_handler(client, query: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton(
-                            "🧑‍💻 Développeur 🧑‍💻", url="https://t.me/Kingcey"
+                            "🧑‍💻 Développeur 🧑‍💻", url="https://t.me/altof2"
                         )
                     ],
                 ]
