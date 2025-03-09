@@ -7,7 +7,7 @@ async def auto_rename_command(client, message):
     user_id = message.from_user.id
 
     # Extraire le format de la commande
-    format_template = message.text.split("/sukuna", 1)[1].strip()
+    format_template = message.text.split("/bug", 1)[1].strip()
 
     # Enregistrer le format dans la base de données
     await AshutoshGoswami24.set_format_template(user_id, format_template)
