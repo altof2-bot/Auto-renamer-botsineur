@@ -41,7 +41,7 @@ Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
  `[episode]` :- Pour remplacer le numéro épisode.
  `[quality]` :- Pour remplacé la résolution de la qualité
 
-<b> Exemple :</b> <code> /sukuna Naruto Shippuden S01[episode] [quality][Dual Audio] @BotZFlix</code>
+<b> Exemple :</b> <code> /sukuna ou /bug Naruto Shippuden S01[episode] [quality][Dual Audio] @BotZFlix</code> 
 
 <b> Votre format autorename actuel :</b> <code>{format_template}</code> """
     
