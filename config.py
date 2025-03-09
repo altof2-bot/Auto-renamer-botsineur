@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re, os, time
-id_pattern = re.compile(r'^.\d+$') 
+id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
@@ -30,22 +30,22 @@ class Txt(object):
         
     START_TXT = """Salut {} 
     
-Je suis BUG maître des fléaux et ||Elèves Du grand maître SINEUR.|| Je suis un bot de renommage de fichiers qui fait partie des plus puissant
+Je suis BUG maître des fléaux et ||Elèves Du grand maître SINEUR.|| Je suis un bot de renommage de fichiers qui fait partie des plus puissants.
 
-Envoyer moi votre Fichier et j'utiliserai l'extension du territoire ||Temple des fichiers|| pour la renommer à la perfection.
+Envoyer moi votre Fichier et j'utiliserai l'extension du territoire ||Temple des fichiers|| pour la renommer à la perfection."""
     
     FILE_NAME_TXT = """<b><u>VOICI LE MENU AUTO-RENOMAGE</u></b>
 
 Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
 
- `[episode]` :- Pour remplacer le numéro épisode.
- `[quality]` :- Pour remplacé la résolution de la qualité
+`[episode]` :- Pour remplacer le numéro épisode.
+`[quality]` :- Pour remplacé la résolution de la qualité
 
 <b> Exemple :</b> <code> /sukuna ou /bug Naruto Shippuden S01[episode] [quality][Dual Audio] @BotZFlix</code> 
 
 <b> Votre format autorename actuel :</b> <code>{format_template}</code> """
     
-    ABOUT_TXT = f"""<b> Mon Nom :</b>
+    ABOUT_TXT = f"""<b>🤖 Mon Nom :</b>
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Librarie :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Serveur :</b> <a href='https://t.me/REQUETE_ANIME_30sbot'>clood</a>
@@ -53,19 +53,18 @@ Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
     
 <b>♻️ Ryōiki Tenkai: Akuryō no Shinden :</b>"""
 
-    
     THUMBNAIL_TXT = """<b><u>🖼️  COMMENT AJOUTER UNE VIGNETTE</u></b>
     
-⦿Vous pouvez ajouter une miniature personnalisée simplement en envoyant une photo.....
+⦿ Vous pouvez ajouter une miniature personnalisée simplement en envoyant une photo.
     
-⦿ /viewthumb - Utilise cette commande pour voir ta vignette
-⦿ /delthumb - Utilise cette commande pour supprimé ta vignette"""
+⦿ /viewthumb - Utilise cette commande pour voir ta vignette.
+⦿ /delthumb - Utilise cette commande pour supprimé ta vignette."""
 
-    CAPTION_TXT = """<b><u>📝  COMMENT DEFINIR UNE LEGENDE ?</u></b>
+    CAPTION_TXT = """<b><u>📝 COMMENT DEFINIR UNE LEGENDE ?</u></b>
     
-⦿ /set_caption - Utilise cette commande pour définir une légende
-⦿ /see_caption - Utilise cette commande pour voir ta légende
-⦿ /del_caption - Utilise cette commande pour supprimé ta légende"""
+⦿ /set_caption - Utilise cette commande pour définir une légende.
+⦿ /see_caption - Utilise cette commande pour voir ta légende.
+⦿ /del_caption - Utilise cette commande pour supprimé ta légende."""
 
     PROGRESS_BAR = """<b>\n
 ╭━━━━❰BUG BOT❱━➣
@@ -76,24 +75,18 @@ Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
 ┣⪼ 🥺 Rejoins ici : @sineur_x_bot
 ╰━━━━━━━━━━━━━━━➣ </b>"""
     
-    
     DONATE_TXT = """<b>❤ Dσɳɑtiσɳ 
 
-🎗Nous ɑvons besoin de votre ɑide ɑujourd’hui pour continuer ɑ̀ vous fournir des contenus de quɑlités ɑ̀ trɑvers nos plɑteformes et bots.
+🎗 Nous avons besoin de votre aide aujourd'hui pour continuer à vous fournir des contenus de qualité à travers nos plateformes et bots.
 
-« Seriez-vous prêt ɑ̀ ɑider en fɑisɑnt un don  ? Chɑque centime ɑiderɑ. »
+« Seriez-vous prêt à aider en faisant un don ? Chaque centime aide. »
 
-« Fɑire un don ❤ est une fɑçon de tendre une mɑin secourɑble. 
+« Faire un don ❤ est une façon de tendre une main secourable. 
 
-En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort visɑnt ɑ̀  mɑintenir les bots ZFlix et ce bot en vie.
+En faisant même un petit don 💞, vous pouvez participer à un effort visant à maintenir les bots ZFlix et ce bot en vie.
 
-🤲 Merci de Contribuer ɑ̀ l'hébergement et ɑux frɑis d'ɑbonnement indispensɑbles pour lɑ survie de notre communɑuté. » """
+🤲 Merci de Contribuer à l'hébergement et aux frais d'abonnement indispensables pour la survie de notre communauté. » """
     
     HELP_TXT = """<b>Hey</b> {}
     
-écrit nous sur @REQUETE_ANIME_30sbot pour tout aide 24/24 """
-
-
-
-
-
+écrit nous sur @REQUETE_ANIME_30sbot pour toute aide 24/24 """
