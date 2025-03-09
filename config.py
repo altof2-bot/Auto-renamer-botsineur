@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import re, os, time
 id_pattern = re.compile(r'^.\d+$') 
 
