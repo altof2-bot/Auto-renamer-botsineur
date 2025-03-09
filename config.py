@@ -3,21 +3,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "24817837")
-    API_HASH  = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7963364338:AAHF93s-DU2ELTYtfduusIyFZMm7K9gGGfM") 
+    API_ID    = os.environ.get("API_ID", "24777493")
+    API_HASH  = os.environ.get("API_HASH", "bf5a6381d07f045af4faeb46d7de36e5")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7683456107:AAH3y7X7fe6XtTjfYlv5v27wIGgsgcGHL70") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","BotZFlix")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://tgbot:4KzEdxEl4YldwwFR@tg.vr8ef.mongodb.net/?retryWrites=true&w=majority&appName=Tg")
+    DB_NAME = os.environ.get("DB_NAME","altof2")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://altof2:123Bonjoure@cluster0.s1suq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/0lA.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7428552084').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/7c1856ae9ba0a15065ade-abf2c0b5a93356da7b.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5116530698').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'BotZFlix,Aniflix_official').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002376378205"))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'sineur_x_bot,sineur_x_bot').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002203058630"))
     PORT = int(os.environ.get("PORT", "8080"))
     
     # wes response configuration     
@@ -29,7 +29,7 @@ class Txt(object):
         
     START_TXT = """Salut {} 
     
-Je suis SUKUNA maître des fléaux et ||Elèves Du grand maître KINGCEY.|| Je suis un bot de renommage de fichiers qui fait partie des plus puissant
+Je suis BUG maître des fléaux et ||Elèves Du grand maître SINEUR.|| Je suis un bot de renommage de fichiers qui fait partie des plus puissant
 
 Envoyer moi votre Fichier et j'utiliserai l'extension du territoire ||Temple des fichiers|| pour la renommer à la perfection.
     
@@ -47,8 +47,8 @@ Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
     ABOUT_TXT = f"""<b>🤖 Mon Nom :</b>
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Librarie :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
-<b>🚀 Serveur :</b> <a href='https://heroku.com'>Heroku</a>
-<b>🧑‍💻 Developeur :</b> <a href='https://t.me/Kingcey'>ZFlixTeam</a>
+<b>🚀 Serveur :</b> <a href='https://t.me/REQUETE_ANIME_30sbot'>clood</a>
+<b>🧑‍💻 Developeur :</b> <a href='https://t.me/altof2'>ZFlixTeam</a>
     
 <b>♻️ Ryōiki Tenkai: Akuryō no Shinden :</b>"""
 
@@ -67,30 +67,30 @@ Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
 ⦿ /del_caption - Utilise cette commande pour supprimé ta légende"""
 
     PROGRESS_BAR = """<b>\n
-╭━━━━❰SUKUNA BOT❱━➣
+╭━━━━❰BUG BOT❱━➣
 ┣⪼ 🗃️ Poids: {1} | {2}
 ┣⪼ ⏳️ FAIT : {0}%
 ┣⪼ 🚀 VITESSE: {3}/s
 ┣⪼ ⏰️ ETA: {4}
-┣⪼ 🥺 Rejoins ici : @ZFlixTeam
+┣⪼ 🥺 Rejoins ici : @sineur_x_bot
 ╰━━━━━━━━━━━━━━━➣ </b>"""
     
     
-    DONATE_TXT = """<b>❤️‍🩹 Dσɳɑtiσɳ 💝
+    DONATE_TXT = """<b>❤ Dσɳɑtiσɳ 
 
-🎗Nous ɑvons besoin de votre ɑide ɑujourd’hui pour continuer ɑ̀ vous fournir des contenus de quɑlités ɑ̀ trɑvers nos plɑteformes et bots.🎗
+🎗Nous ɑvons besoin de votre ɑide ɑujourd’hui pour continuer ɑ̀ vous fournir des contenus de quɑlités ɑ̀ trɑvers nos plɑteformes et bots.
 
-« Seriez-vous prêt ɑ̀ ɑider en fɑisɑnt un don 💝 ? Chɑque centime ɑiderɑ. »
+« Seriez-vous prêt ɑ̀ ɑider en fɑisɑnt un don  ? Chɑque centime ɑiderɑ. »
 
-« Fɑire un don ❤️‍🩹 est une fɑçon de tendre une mɑin secourɑble. 
+« Fɑire un don ❤ est une fɑçon de tendre une mɑin secourɑble. 
 
 En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort visɑnt ɑ̀  mɑintenir les bots ZFlix et ce bot en vie.
 
-🤲 Merci de Contribuer ɑ̀ l'hébergement et ɑux frɑis d'ɑbonnement indispensɑbles pour lɑ survie de notre communɑuté🥹. » """
+🤲 Merci de Contribuer ɑ̀ l'hébergement et ɑux frɑis d'ɑbonnement indispensɑbles pour lɑ survie de notre communɑuté. » """
     
     HELP_TXT = """<b>Hey</b> {}
     
-écrit nous sur @BotZFlixSupport pour tout aide 24/24 """
+écrit nous sur @REQUETE_ANIME_30sbot pour tout aide 24/24 """
 
 
 
