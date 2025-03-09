@@ -45,7 +45,7 @@ Utilisez ces mots-clés pour configurer un nom de fichier personnalisé
 
 <b> Votre format autorename actuel :</b> <code>{format_template}</code> """
     
-    ABOUT_TXT = f"""<b>🤖 Mon Nom :</b>
+    ABOUT_TXT = f"""<b> Mon Nom :</b>
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Librarie :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Serveur :</b> <a href='https://t.me/REQUETE_ANIME_30sbot'>clood</a>
