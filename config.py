@@ -7,7 +7,8 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "24777493")
     API_HASH  = os.environ.get("API_HASH", "bf5a6381d07f045af4faeb46d7de36e5")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7683456107:AAH3y7X7fe6XtTjfYlv5v27wIGgsgcGHL70") 
-
+    # Ajoute cette ligne pour définir l
+    STRING_SESSION = os.environ.get("STRING_SESSION", "BAF6ExUAfim0G_8quyRNCmskesa_YPPI8IxghqUEDM7QY0ITmGg3QNWxtu2lsasCxDkzShJESU9-chs8kHLT22wskZpHzSRRiDFh7-y02646bwro-R4uuMvVhWb56V3R_ZyJ4Y9drbaBmQDMGu2MjUaHwQFUlh4g0xGMyxKk3RjCJXti1PdtDJGHnQq_4aPMfXHh7D3ziPRl1PzdapvwmlJsCMKQfAVNUH04AUbSLtLkGErOLWnfPbMFqNI6I0ePz4Y4_5p1lq7wIA9SVfNn0p0zSxJDJ-bJ8fnER81wjIfM2b7QxeTvogEcuwR1WpPXGLFLli5ezZWfYUzyUJEwAfXw7gpPQQAAAAHKsW3dAQ")
     # database config
     DB_NAME = os.environ.get("DB_NAME","altof2")     
     DB_URL  = os.environ.get("DB_URL","mongodb+srv://altof2:123Bonjoure@cluster0.s1suq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
